@@ -1,4 +1,4 @@
-import { CSSType } from '@service/types';
+import { CSSType } from '@emotion/reac';
 import { HTMLMotionProps } from 'framer-motion';
 
 export type AtomTextTypes = HTMLMotionProps<'p'> &
