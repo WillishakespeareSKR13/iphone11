@@ -109,7 +109,7 @@ const SectionCamera = () => {
               object-fit: contain;
               object-position: center center;
               backface-visibility: hidden;
-              transform: scale(4)
+              transform: scale(3.5)
                 rotateZ(${scroll.camera.mapHalf + scroll.closer.mapHalf}deg);
               transition: transform 2s ease-out;
             }

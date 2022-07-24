@@ -7,7 +7,6 @@ export const getPositionChilds = (child: RefDiv) => {
   const getScrollChild = Math.max(getScroll * -1, 0);
   const applyRules = Math.min(getScrollChild, getHeight);
   const getMap = map(applyRules, 0, getHeight, 0, 100);
-  console.log(getMap);
   return {
     distance: applyRules,
     isMax: getScrollChild >= getHeight,

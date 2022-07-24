@@ -5,6 +5,8 @@ import {
   RefCloserAtom,
   RefPhoneAtom,
   RefProImageAtom,
+  RefShootAtom,
+  RefZoomAtom,
 } from "./ref";
 
 export const ScrollPosition = atom(0);
@@ -15,4 +17,6 @@ export const ScrollAtom = atom((get) => ({
   proImage: getPositionChilds(get(RefProImageAtom)),
   closer: getPositionChilds(get(RefCloserAtom)),
   camera: getPositionChilds(get(RefCameraAtom)),
+  shoot: getPositionChilds(get(RefShootAtom)),
+  zoom: getPositionChilds(get(RefZoomAtom)),
 }));

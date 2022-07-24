@@ -6,3 +6,5 @@ export const RefPhoneAtom = atom(null as unknown as RefDiv);
 export const RefProImageAtom = atom(null as unknown as RefDiv);
 export const RefCloserAtom = atom(null as unknown as RefDiv);
 export const RefCameraAtom = atom(null as unknown as RefDiv);
+export const RefShootAtom = atom(null as unknown as RefDiv);
+export const RefZoomAtom = atom(null as unknown as RefDiv);

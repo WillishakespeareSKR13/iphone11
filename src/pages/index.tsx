@@ -11,6 +11,9 @@ import SectionCamera from "../components/sections/camera";
 import { useScroll } from "framer-motion";
 import { useSetAtom } from "jotai";
 import { ScrollPosition } from "../jotai/scroll";
+import SectionShoot from "../components/sections/shoot";
+import SectionZoom from "../components/sections/zoom";
+import SectionFinish from "../components/sections/finish";
 
 const Home: FC = () => {
   const { scrollY } = useScroll();
@@ -36,6 +39,9 @@ const Home: FC = () => {
       <SectionProImages />
       <SectionCloser />
       <SectionCamera />
+      <SectionShoot />
+      <SectionZoom />
+      <SectionFinish />
     </AtomWrapper>
   );
 };

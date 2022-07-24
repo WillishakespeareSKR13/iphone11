@@ -106,7 +106,7 @@ const NormalizerStyled: FC = () => {
           background: #0071e3;
         }
         ::-webkit-scrollbar-track {
-          background: #f5f5f7;
+          background: #111111;
         }
       `}
     />
