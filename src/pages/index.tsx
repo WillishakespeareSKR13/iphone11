@@ -2,7 +2,6 @@ import { css } from '@emotion/react';
 import { FC, useEffect } from 'react';
 import AtomWrapper from '../components/atoms/AtomWrapper';
 import Nav from '../components/nav';
-import NavTooltip from '../components/navtooltip';
 import SectionPhone from '../components/sections/phone';
 import { CSSContainer } from '../css/wrapper';
 import SectionProImages from '../components/sections/pro-images';
@@ -35,7 +34,6 @@ const Home: FC = () => {
       `}
     >
       <Nav />
-      <NavTooltip />
       <SectionPhone />
       <SectionProImages />
       <SectionCloser />

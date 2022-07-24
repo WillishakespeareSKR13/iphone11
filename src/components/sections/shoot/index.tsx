@@ -123,12 +123,12 @@ const SectionShoot = () => {
                   position: absolute;
                   width: 100%;
                   height: max-content;
-                  top: 52%;
+                  top: 65vh;
                   left: 0;
                   transform: translate(-50% -50%);
                   @media screen and (max-width: 980px) {
                     transform: translate(-50% -50%);
-                    top: 30%;
+                    top: 10vh;
                   }
                   hr {
                     margin: 10px 0px 20px 0px;
@@ -178,19 +178,19 @@ const SectionShoot = () => {
                   ease: 'easeInOut'
                 }}
                 css={css`
-                  top: 38%;
+                  top: 45vh;
                   left: 0px;
                   position: absolute;
                   width: 100%;
                   height: max-content;
                   @media screen and (max-width: 980px) {
                     transform: translate(-50% -50%);
-                    top: 30%;
+                    top: 10vh;
                   }
                   hr {
                     margin: 10px 0px 20px 0px;
                     width: 100vw;
-                    max-width: 980px;
+                    max-width: 900px;
                     border: 1px solid #848484;
                     @media screen and (max-width: 980px) {
                       display: none;
@@ -229,14 +229,14 @@ const SectionShoot = () => {
                   ease: 'easeInOut'
                 }}
                 css={css`
-                  top: 49%;
+                  top: 55vh;
                   left: 0px;
                   position: absolute;
                   width: 100%;
                   height: max-content;
                   @media screen and (max-width: 980px) {
                     transform: translate(-50% -50%);
-                    top: 30%;
+                    top: 10vh;
                   }
                   hr {
                     margin: 20px 0px 10px 0px;

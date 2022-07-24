@@ -19,16 +19,12 @@ const SectionProImages = () => {
       ref={ref}
       as="section"
       css={css`
-        position: ${scroll?.phone?.isMax ? 'static' : 'fixed'};
         ${CSSContainer}
-        height: max-content;
-        padding: 0px 40px 40px 40px;
-        gap: 40px;
+        position: ${scroll?.phone?.isMax ? 'relative' : 'fixed'};
+        height: 200vh;
         top: 0;
         z-index: 9;
-        @media screen and (max-width: 980px) {
-          padding: 0px 20px 20px 20px;
-        }
+        background-color: #111111;
       `}
     >
       <SectionPro />

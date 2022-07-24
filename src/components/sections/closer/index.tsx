@@ -23,14 +23,24 @@ const SectionCloser = () => {
     <AtomWrapper
       ref={ref}
       css={css`
-        position: ${scroll?.proImage?.isMax ? 'static' : 'fixed'};
+        position: ${scroll?.proImage?.isMax ? 'relative' : 'fixed'};
         ${CSSContainer}
         height: 100vh;
-        padding: 0px 40px 40px 40px;
         gap: 40px;
         z-index: 8;
         @media screen and (max-width: 980px) {
-          padding: 0px 20px 20px 20px;
+          gap: 20px;
+        }
+        ::after {
+          top: 0;
+          content: '';
+          width: 100vw;
+          height: 100vh;
+          position: absolute;
+          border: 40px solid #111111;
+          @media screen and (max-width: 980px) {
+            border: 20px solid #111111;
+          }
         }
       `}
     >

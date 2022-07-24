@@ -14,13 +14,23 @@ const SectionPro = () => {
       <AtomWrapper
         css={css`
           width: 100%;
-          position: relative;
           justify-content: center;
           align-items: center;
           background-color: #000000;
-          height: calc(100vh - 40px);
-          min-height: 100%;
-          padding-top: 40px;
+          height: 100vh;
+          max-height: 100vh;
+          min-height: 100vh;
+          ::after {
+            top: 0;
+            content: '';
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            border: 40px solid #111111;
+            @media screen and (max-width: 980px) {
+              border: 20px solid #111111;
+            }
+          }
         `}
       >
         <AtomWrapper

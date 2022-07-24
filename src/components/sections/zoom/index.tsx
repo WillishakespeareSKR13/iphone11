@@ -23,7 +23,7 @@ const SectionZoom = () => {
         css={css`
           ${CSSContainer}
           position: relative;
-          top: 40px;
+          top: 0;
           width: 100vw;
           height: 400vh;
           min-height: 400vh;
@@ -164,7 +164,7 @@ const SectionZoom = () => {
                       margin-left: ${Math.min(scroll.zoom.map, 70)}%;
                       width: 30%;
                       border: 1px solid #ffffff;
-                      transition: all 0.5s ease-in-out;
+                      transition: all 0.2s ease-in-out;
                     }
                     @media screen and (max-width: 980px) {
                       margin-top: 10px;

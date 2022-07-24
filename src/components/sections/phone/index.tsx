@@ -20,11 +20,19 @@ const SectionPhone = () => {
       as="section"
       css={css`
         ${CSSContainer}
+        position: relative;
         height: 100vh;
-        padding: 0px 40px 40px 40px;
         z-index: 10;
-        @media screen and (max-width: 980px) {
-          padding: 00px 20px 20px 20px;
+        ::after {
+          top: 0;
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          border: 40px solid #111111;
+          @media screen and (max-width: 980px) {
+            border: 20px solid #111111;
+          }
         }
       `}
     >

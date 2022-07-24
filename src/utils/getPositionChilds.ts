@@ -9,15 +9,13 @@ export const getPositionChilds = (child: RefDiv) => {
   const getMap = map(applyRules, 0, getHeight, 0, 100);
   return {
     distance: applyRules,
-    isMax: getScrollChild >= getHeight,
-    isPreMax: getScrollChild >= getHeight - 50,
+    isMax: getScrollChild > getHeight,
+    isMax40: getScrollChild >= getHeight + 40,
+    isMax20: getScrollChild >= getHeight + 20,
     max: getHeight,
     map: getMap,
     mapHalf: map(applyRules, 0, getHeight, 0, 50),
     mapQuarter: map(applyRules, 0, getHeight, 0, 25),
-    mapHalfQuarter: map(applyRules, 0, getHeight, 0, 15),
-    middleUp: Math.min(getMap, 50),
-    middleDown: Math.max(getMap, 50),
-    middle: Math.abs(getMap - 50)
+    mapHalfQuarter: map(applyRules, 0, getHeight, 0, 15)
   };
 };
