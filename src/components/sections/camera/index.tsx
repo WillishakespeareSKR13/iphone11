@@ -74,6 +74,10 @@ const SectionCamera = () => {
               line-height: 1.0416;
               font-weight: 600;
               letter-spacing: -0.015px;
+              @media screen and (max-width: 768px) {
+                font-size: 48px;
+                max-width: 250px;
+              }
             `}
           >
             Pro camera system
@@ -91,6 +95,10 @@ const SectionCamera = () => {
               line-height: 1.0416;
               font-weight: 600;
               letter-spacing: -0.015px;
+              @media screen and (max-width: 768px) {
+                font-size: 48px;
+                max-width: 250px;
+              }
             `}
           >
             We’ ve three‑upped ourselves.

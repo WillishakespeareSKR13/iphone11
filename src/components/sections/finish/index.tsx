@@ -34,6 +34,9 @@ const SectionFinish = () => {
             line-height: 1.333;
             font-weight: 600;
             text-align: center;
+            @media screen and (max-width: 768px) {
+              font-size: 48px;
+            }
           `}
         >
           Thanks for scrolling through.
@@ -44,6 +47,14 @@ const SectionFinish = () => {
             overflow: hidden;
             width: max-content;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            @media screen and (max-width: 768px) {
+              width: 250px;
+              height: 250px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
           `}
           src="https://media-exp1.licdn.com/dms/image/C5603AQH-AA47ERffeA/profile-displayphoto-shrink_800_800/0/1626139953564?e=1664409600&v=beta&t=aVOh4w6Jy3jaY4AqRj6Uyo_QVMu9T7-xWILH84JYwrc"
         />
@@ -61,6 +72,9 @@ const SectionFinish = () => {
                 font-size: 22px;
                 font-weight: bold;
                 text-decoration: underline;
+                @media screen and (max-width: 768px) {
+                  font-size: 16px;
+                }
               `}
             >
               Linkedin
@@ -73,6 +87,9 @@ const SectionFinish = () => {
                 font-size: 22px;
                 font-weight: bold;
                 text-decoration: underline;
+                @media screen and (max-width: 768px) {
+                  font-size: 16px;
+                }
               `}
             >
               Github
@@ -85,6 +102,9 @@ const SectionFinish = () => {
                 font-size: 22px;
                 font-weight: bold;
                 text-decoration: underline;
+                @media screen and (max-width: 768px) {
+                  font-size: 16px;
+                }
               `}
             >
               Repository

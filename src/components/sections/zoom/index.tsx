@@ -68,6 +68,10 @@ const SectionZoom = () => {
                 align-items: center;
                 justify-content: center;
                 gap: 60px;
+                @media screen and (max-width: 768px) {
+                  padding: 0 30px;
+                  gap: 30px;
+                }
               `}
             >
               <AtomText
@@ -76,6 +80,12 @@ const SectionZoom = () => {
                   color: #cdcdcd;
                   line-height: 1.333;
                   font-weight: 600;
+                  b {
+                    color: #ffffff;
+                  }
+                  @media screen and (max-width: 768px) {
+                    font-size: 19px;
+                  }
                 `}
               >
                 <b>Expanded field of view.</b> iPhone 11 Pro lets you zoom from
@@ -89,6 +99,9 @@ const SectionZoom = () => {
                   height: 400px;
                   align-items: center;
                   justify-content: center;
+                  @media screen and (max-width: 768px) {
+                    height: 350px;
+                  }
                 `}
               >
                 <AtomImage
@@ -158,6 +171,9 @@ const SectionZoom = () => {
                       border: 1px solid #ffffff;
                       transition: all 0.5s ease-in-out;
                     }
+                    @media screen and (max-width: 768px) {
+                      margin-top: 10px;
+                    }
                   }
                 `}
               >
@@ -166,6 +182,9 @@ const SectionZoom = () => {
                     flex-direction: row;
                     justify-content: center;
                     gap: 40px;
+                    @media screen and (max-width: 768px) {
+                      gap: 20px;
+                    }
                   `}
                 >
                   <AtomText css={TextZoom}>Thelephoto</AtomText>

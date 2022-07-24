@@ -4,9 +4,9 @@ export const CSSShadowCover = css`
   ::before {
     content: "";
     position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
+    bottom: -40px;
+    left: -40px;
+    width: 100vw;
     height: 150px;
     transform: translate(0, -100%);
     background: linear-gradient(0deg, #000, transparent 100%, transparent);
@@ -16,8 +16,8 @@ export const CSSShadowCover = css`
     content: "";
     position: absolute;
     bottom: -40px;
-    left: 0;
-    width: 100%;
+    left: -40px;
+    width: 100vw;
     height: 150px;
     transform: translate(0, 100%);
     background: linear-gradient(180deg, #000, transparent 100%, transparent);

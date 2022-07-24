@@ -30,6 +30,10 @@ const SectionPro = () => {
             justify-content: center;
             align-items: center;
             gap: 50px;
+            @media screen and (max-width: 768px) {
+              padding: 0 30px;
+              gap: 20px;
+            }
           `}
         >
           <AtomText
@@ -47,6 +51,12 @@ const SectionPro = () => {
               font-weight: 600;
               line-height: 1.04;
               letter-spacing: -0.01em;
+              overflow-wrap: break-word;
+              @media screen and (max-width: 768px) {
+                max-width: 100%;
+                text-align: left;
+                font-size: 48px;
+              }
             `}
           >
             And then there was Pro.
@@ -65,6 +75,11 @@ const SectionPro = () => {
               line-height: 1.125;
               font-weight: 600;
               letter-spacing: 0.004px;
+              @media screen and (max-width: 768px) {
+                font-size: 24px;
+                max-width: 100%;
+                text-align: left;
+              }
             `}
           >
             A transformative triple‑camera system that adds tons of capability
@@ -78,6 +93,10 @@ const SectionPro = () => {
               justify-content: center;
               align-items: center;
               gap: 20px;
+              @media screen and (max-width: 768px) {
+                gap: 5px;
+                align-items: flex-start;
+              }
             `}
           >
             <AtomText
@@ -93,9 +112,21 @@ const SectionPro = () => {
                 color: #aaa;
                 font-weight: 600;
                 letter-spacing: -0.003px;
+                br {
+                  display: none;
+                }
+                @media screen and (max-width: 768px) {
+                  max-width: 50%;
+                  font-size: 21px;
+                  max-width: 100%;
+                  text-align: left;
+                  br {
+                    display: flex;
+                  }
+                }
               `}
             >
-              From $24.95/mo. or $599 with trade-in.*
+              From $24.95/mo. or <br /> $599 with trade-in.*
             </AtomText>
             <AtomWrapper
               animate={scroll?.phone?.map > 20 ? "open" : "closed"}
@@ -116,6 +147,16 @@ const SectionPro = () => {
                   :hover {
                     cursor: pointer;
                     text-decoration: underline;
+                  }
+                }
+                @media screen and (max-width: 768px) {
+                  justify-content: flex-start;
+                  gap: 0px 40px;
+                  flex-wrap: wrap;
+                  span {
+                    font-size: 21px;
+                    max-width: 100%;
+                    text-align: left;
                   }
                 }
               `}

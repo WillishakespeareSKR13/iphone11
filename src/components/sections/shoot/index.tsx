@@ -59,6 +59,11 @@ const SectionShoot = () => {
               max-width: 980px;
               z-index: 1;
               gap: 80px;
+              @media screen and (max-width: 768px) {
+                flex-direction: column;
+                padding: 0px 30px;
+                gap: 0px;
+              }
             `}
           >
             <AtomWrapper
@@ -68,6 +73,9 @@ const SectionShoot = () => {
                 height: 100%;
                 align-items: center;
                 justify-content: center;
+                @media screen and (max-width: 768px) {
+                  width: 100%;
+                }
               `}
             >
               <AtomText
@@ -87,6 +95,9 @@ const SectionShoot = () => {
                   line-height: 1.125333;
                   font-weight: 600;
                   letter-spacing: 0.004px;
+                  @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                  }
                 `}
               >
                 Meet the first triple‑camera system to combine cutting‑edge
@@ -115,6 +126,10 @@ const SectionShoot = () => {
                   top: 52%;
                   left: 0;
                   transform: translate(-50% -50%);
+                  @media screen and (max-width: 768px) {
+                    transform: translate(-50% -50%);
+                    top: 30%;
+                  }
                   hr {
                     margin: 10px 0px 20px 0px;
                     width: 100vw;
@@ -122,6 +137,9 @@ const SectionShoot = () => {
                     height: 3px;
                     border: 1px solid #848484;
                     background-color: #848484;
+                    @media screen and (max-width: 768px) {
+                      display: none;
+                    }
                   }
                   z-index: -1;
                 `}
@@ -132,6 +150,10 @@ const SectionShoot = () => {
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 1.285;
+                    @media screen and (max-width: 768px) {
+                      font-size: 21px;
+                      margin-bottom: 10px;
+                    }
                   `}
                 >
                   ULTRA WIDE CAMERA
@@ -161,11 +183,18 @@ const SectionShoot = () => {
                   position: absolute;
                   width: 100%;
                   height: max-content;
+                  @media screen and (max-width: 768px) {
+                    transform: translate(-50% -50%);
+                    top: 30%;
+                  }
                   hr {
                     margin: 10px 0px 20px 0px;
                     width: 100vw;
                     max-width: 980px;
                     border: 1px solid #848484;
+                    @media screen and (max-width: 768px) {
+                      display: none;
+                    }
                   }
                 `}
               >
@@ -175,6 +204,10 @@ const SectionShoot = () => {
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 1.285;
+                    @media screen and (max-width: 768px) {
+                      font-size: 21px;
+                      margin-bottom: 10px;
+                    }
                   `}
                 >
                   WIDE CAMERA
@@ -201,11 +234,18 @@ const SectionShoot = () => {
                   position: absolute;
                   width: 100%;
                   height: max-content;
+                  @media screen and (max-width: 768px) {
+                    transform: translate(-50% -50%);
+                    top: 30%;
+                  }
                   hr {
                     margin: 20px 0px 10px 0px;
                     width: 100vw;
                     max-width: 880px;
                     border: 1px solid #848484;
+                    @media screen and (max-width: 768px) {
+                      display: none;
+                    }
                   }
                 `}
               >
@@ -222,6 +262,10 @@ const SectionShoot = () => {
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 1.285;
+                    @media screen and (max-width: 768px) {
+                      font-size: 21px;
+                      margin-top: 10px;
+                    }
                   `}
                 >
                   TELEPHONE CAMERA
@@ -233,6 +277,9 @@ const SectionShoot = () => {
                 width: 50%;
                 height: 60%;
                 position: relative;
+                @media screen and (max-width: 768px) {
+                  height: 100%;
+                }
               `}
             >
               <AtomImage
@@ -251,6 +298,9 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 2s ease-out;
+                    @media screen and (max-width: 768px) {
+                      transform: translate(-25%, -25%) scale(0.5);
+                    }
                   }
                 `}
                 src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9de623d452353459232e39_camera_three_lens_system_phone__cokiuc6tixw2_large_2x.jpg"
@@ -274,6 +324,9 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 0.5s ease-out;
+                    @media screen and (max-width: 768px) {
+                      transform: translate(-33.5%, -34%) scale(0.5);
+                    }
                   }
                 `}
                 src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9df2ef916a653b009ed535_middle.png"
@@ -296,6 +349,9 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 0.5s ease-out;
+                    @media screen and (max-width: 768px) {
+                      transform: translate(-33.5%, -34%) scale(0.5);
+                    }
                   }
                 `}
                 src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9df2f020ac3a16e9297135_top.png"
@@ -316,6 +372,9 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 0.5s ease-out;
+                    @media screen and (max-width: 768px) {
+                      transform: translate(-33.5%, -34%) scale(0.5);
+                    }
                   }
                 `}
                 src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9df2f0d30da38fca8d779d_top%20copy.png"

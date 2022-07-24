@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { FC, useEffect, useRef } from "react";
+import { FC, useEffect } from "react";
 import AtomWrapper from "../components/atoms/AtomWrapper";
 import Nav from "../components/nav";
 import NavTooltip from "../components/navtooltip";
@@ -30,7 +30,6 @@ const Home: FC = () => {
       as="main"
       css={css`
         ${CSSContainer}
-        min-height: 1000vh;
       `}
     >
       <Nav />
@@ -41,7 +40,7 @@ const Home: FC = () => {
       <SectionCamera />
       <SectionShoot />
       <SectionZoom />
-      <SectionFinish />
+      <SectionFinish/>
     </AtomWrapper>
   );
 };

@@ -42,6 +42,9 @@ const SectionCloser = () => {
           height: 100%;
           min-height: 100%;
           gap: 30px;
+          @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+          }
         `}
       >
         <AtomWrapper
@@ -51,6 +54,9 @@ const SectionCloser = () => {
             height: 100%;
             width: 70%;
             background-color: #000000;
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
           `}
         >
           <AtomWrapper
@@ -73,6 +79,10 @@ const SectionCloser = () => {
                 font-weight: 600;
                 line-height: 1.05;
                 letter-spacing: -0.006px;
+                @media screen and (max-width: 768px) {
+                  font-size: 40px;
+                  max-width: 220px;
+                }
               `}
             >
               Take a closer look.
@@ -89,6 +99,10 @@ const SectionCloser = () => {
                 color: #aaa;
                 font-weight: 600;
                 letter-spacing: -0.003px;
+                @media screen and (max-width: 768px) {
+                  font-size: 19px;
+                  max-width: 270px;
+                }
               `}
             >
               Two sizes. Four finishes. Stainless steel and glass design.

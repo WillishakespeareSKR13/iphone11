@@ -19,6 +19,11 @@ const SectionImages = () => {
           height: 100vh;
           min-height: 100%;
           gap: 40px;
+          @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+          }
         `}
       >
         <AtomImage
@@ -39,6 +44,10 @@ const SectionImages = () => {
               transition: transform 2s ease-out;
               backface-visibility: hidden;
             }
+            @media screen and (max-width: 768px) {
+              width: 47%;
+              height: 70%;
+            }
           `}
           src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9db5e9d30da31b978adc15_triptych_left_landscape__eczd4p0wyv6u_large_2x.jpg"
         />
@@ -56,6 +65,10 @@ const SectionImages = () => {
                 translate(0%, ${-(scroll.proImage.mapHalf - 25) + 10}%);
               transition: transform 2s ease-out;
               backface-visibility: hidden;
+            }
+            @media screen and (max-width: 768px) {
+              width: 47%;
+              height: 70%;
             }
           `}
           src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9db5e920ac3aa83c26aaa2_triptych_middle_landscape__c14zbto4v402_large_2x.jpg"
@@ -75,6 +88,15 @@ const SectionImages = () => {
                 translate(0%, ${scroll.proImage.mapHalf - 25 + 5}%);
               transition: transform 2s ease-out;
               backface-visibility: hidden;
+            }
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              height: 30%;
+              img {
+                transform: scale(1.5)
+                  translate(0%, ${scroll.proImage.mapHalf - 25 + 5}%)
+                  rotate(90deg);
+              }
             }
           `}
           src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9db5e920ac3a5cf026aaa1_triptych_right_landscape__ik46z8u34ki2_large_2x.jpg"
