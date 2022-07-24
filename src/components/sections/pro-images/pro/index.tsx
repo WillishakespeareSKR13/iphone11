@@ -30,7 +30,7 @@ const SectionPro = () => {
             justify-content: center;
             align-items: center;
             gap: 50px;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 980px) {
               padding: 0 30px;
               gap: 20px;
             }
@@ -52,7 +52,7 @@ const SectionPro = () => {
               line-height: 1.04;
               letter-spacing: -0.01em;
               overflow-wrap: break-word;
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 980px) {
                 max-width: 100%;
                 text-align: left;
                 font-size: 48px;
@@ -75,7 +75,7 @@ const SectionPro = () => {
               line-height: 1.125;
               font-weight: 600;
               letter-spacing: 0.004px;
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 980px) {
                 font-size: 24px;
                 max-width: 100%;
                 text-align: left;
@@ -93,7 +93,7 @@ const SectionPro = () => {
               justify-content: center;
               align-items: center;
               gap: 20px;
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 980px) {
                 gap: 5px;
                 align-items: flex-start;
               }
@@ -115,7 +115,7 @@ const SectionPro = () => {
                 br {
                   display: none;
                 }
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   max-width: 50%;
                   font-size: 21px;
                   max-width: 100%;
@@ -149,7 +149,7 @@ const SectionPro = () => {
                     text-decoration: underline;
                   }
                 }
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   justify-content: flex-start;
                   gap: 0px 40px;
                   flex-wrap: wrap;

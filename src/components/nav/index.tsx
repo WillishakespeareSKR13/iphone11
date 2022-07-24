@@ -50,7 +50,7 @@ const DesktopNav = () => (
         object-fit: none;
         object-position: center center;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 920px) {
         display: none;
       }
     `}
@@ -110,8 +110,9 @@ const MovileNav = () => (
         object-position: center center;
       }
       padding: 0px 30px;
-      @media screen and (min-width: 768px) {
-        display: none;
+      display: none;
+      @media screen and (max-width: 920px) {
+        display: flex;
       }
     `}
   >

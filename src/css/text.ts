@@ -5,7 +5,7 @@ export const TextShoot = css`
   font-weight: 600;
   font-size: 28px;
   line-height: 1.285;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     font-size: 21px;
   }
 `;
@@ -16,7 +16,7 @@ export const TextZoom = css`
   font-size: 19px;
   line-height: 1.2;
   font-weight: 600;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     font-size: 14px;
   }
 `;

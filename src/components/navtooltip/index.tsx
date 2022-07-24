@@ -22,7 +22,7 @@ const Nav = () => {
         css={css`
           ${CSSContent}
           max-width: 980px;
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 980px) {
             padding: 0px 30px;
           }
           background-color: #111111;
@@ -59,7 +59,7 @@ const Nav = () => {
               color: white;
             }
             .movile {
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 980px) {
                 display: none;
               }
             }

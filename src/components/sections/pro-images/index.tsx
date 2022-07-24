@@ -26,6 +26,9 @@ const SectionProImages = () => {
         gap: 40px;
         top: 0;
         z-index: 9;
+        @media screen and (max-width: 980px) {
+          padding: 0px 20px 20px 20px;
+        }
       `}
     >
       <SectionPro />

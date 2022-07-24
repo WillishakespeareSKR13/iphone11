@@ -5,6 +5,7 @@ export const CSSContainer = css`
   align-items: center;
   background-color: #111111;
   min-height: 100vh;
+  max-width: 100vw;
 `;
 
 export const CSSContent = css`

@@ -30,6 +30,7 @@ const Home: FC = () => {
       as="main"
       css={css`
         ${CSSContainer}
+        overflow-x: hidden;
       `}
     >
       <Nav />

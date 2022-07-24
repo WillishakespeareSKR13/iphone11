@@ -29,6 +29,9 @@ const SectionCloser = () => {
         padding: 0px 40px 40px 40px;
         gap: 40px;
         z-index: 8;
+        @media screen and (max-width: 980px) {
+          padding: 0px 20px 20px 20px;
+        }
       `}
     >
       <AtomWrapper
@@ -42,7 +45,7 @@ const SectionCloser = () => {
           height: 100%;
           min-height: 100%;
           gap: 30px;
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 980px) {
             flex-direction: column-reverse;
           }
         `}
@@ -54,7 +57,7 @@ const SectionCloser = () => {
             height: 100%;
             width: 70%;
             background-color: #000000;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 980px) {
               width: 100%;
             }
           `}
@@ -79,7 +82,7 @@ const SectionCloser = () => {
                 font-weight: 600;
                 line-height: 1.05;
                 letter-spacing: -0.006px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   font-size: 40px;
                   max-width: 220px;
                 }
@@ -99,7 +102,7 @@ const SectionCloser = () => {
                 color: #aaa;
                 font-weight: 600;
                 letter-spacing: -0.003px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   font-size: 19px;
                   max-width: 270px;
                 }

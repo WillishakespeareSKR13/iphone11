@@ -59,7 +59,7 @@ const SectionShoot = () => {
               max-width: 980px;
               z-index: 1;
               gap: 80px;
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 980px) {
                 flex-direction: column;
                 padding: 0px 30px;
                 gap: 0px;
@@ -73,7 +73,7 @@ const SectionShoot = () => {
                 height: 100%;
                 align-items: center;
                 justify-content: center;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   width: 100%;
                 }
               `}
@@ -95,7 +95,7 @@ const SectionShoot = () => {
                   line-height: 1.125333;
                   font-weight: 600;
                   letter-spacing: 0.004px;
-                  @media screen and (max-width: 768px) {
+                  @media screen and (max-width: 980px) {
                     font-size: 24px;
                   }
                 `}
@@ -126,7 +126,7 @@ const SectionShoot = () => {
                   top: 52%;
                   left: 0;
                   transform: translate(-50% -50%);
-                  @media screen and (max-width: 768px) {
+                  @media screen and (max-width: 980px) {
                     transform: translate(-50% -50%);
                     top: 30%;
                   }
@@ -137,7 +137,7 @@ const SectionShoot = () => {
                     height: 3px;
                     border: 1px solid #848484;
                     background-color: #848484;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       display: none;
                     }
                   }
@@ -150,7 +150,7 @@ const SectionShoot = () => {
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 1.285;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       font-size: 21px;
                       margin-bottom: 10px;
                     }
@@ -183,7 +183,7 @@ const SectionShoot = () => {
                   position: absolute;
                   width: 100%;
                   height: max-content;
-                  @media screen and (max-width: 768px) {
+                  @media screen and (max-width: 980px) {
                     transform: translate(-50% -50%);
                     top: 30%;
                   }
@@ -192,7 +192,7 @@ const SectionShoot = () => {
                     width: 100vw;
                     max-width: 980px;
                     border: 1px solid #848484;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       display: none;
                     }
                   }
@@ -204,7 +204,7 @@ const SectionShoot = () => {
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 1.285;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       font-size: 21px;
                       margin-bottom: 10px;
                     }
@@ -234,7 +234,7 @@ const SectionShoot = () => {
                   position: absolute;
                   width: 100%;
                   height: max-content;
-                  @media screen and (max-width: 768px) {
+                  @media screen and (max-width: 980px) {
                     transform: translate(-50% -50%);
                     top: 30%;
                   }
@@ -243,7 +243,7 @@ const SectionShoot = () => {
                     width: 100vw;
                     max-width: 880px;
                     border: 1px solid #848484;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       display: none;
                     }
                   }
@@ -262,7 +262,7 @@ const SectionShoot = () => {
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 1.285;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       font-size: 21px;
                       margin-top: 10px;
                     }
@@ -277,7 +277,7 @@ const SectionShoot = () => {
                 width: 50%;
                 height: 60%;
                 position: relative;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   height: 100%;
                 }
               `}
@@ -298,7 +298,7 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 2s ease-out;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       transform: translate(-25%, -25%) scale(0.5);
                     }
                   }
@@ -324,7 +324,7 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 0.5s ease-out;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       transform: translate(-33.5%, -34%) scale(0.5);
                     }
                   }
@@ -349,7 +349,7 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 0.5s ease-out;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       transform: translate(-33.5%, -34%) scale(0.5);
                     }
                   }
@@ -372,7 +372,7 @@ const SectionShoot = () => {
                     object-fit: contain;
                     backface-visibility: hidden;
                     transition: all 0.5s ease-out;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 980px) {
                       transform: translate(-33.5%, -34%) scale(0.5);
                     }
                   }

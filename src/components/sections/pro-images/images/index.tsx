@@ -19,7 +19,7 @@ const SectionImages = () => {
           height: 100vh;
           min-height: 100%;
           gap: 40px;
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 980px) {
             flex-wrap: wrap;
             gap: 20px;
             justify-content: space-between;
@@ -44,7 +44,7 @@ const SectionImages = () => {
               transition: transform 2s ease-out;
               backface-visibility: hidden;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 980px) {
               width: 47%;
               height: 70%;
             }
@@ -66,7 +66,7 @@ const SectionImages = () => {
               transition: transform 2s ease-out;
               backface-visibility: hidden;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 980px) {
               width: 47%;
               height: 70%;
             }
@@ -89,7 +89,7 @@ const SectionImages = () => {
               transition: transform 2s ease-out;
               backface-visibility: hidden;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 980px) {
               width: 100%;
               height: 30%;
               img {

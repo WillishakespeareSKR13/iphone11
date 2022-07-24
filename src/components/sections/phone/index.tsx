@@ -23,6 +23,9 @@ const SectionPhone = () => {
         height: 100vh;
         padding: 0px 40px 40px 40px;
         z-index: 10;
+        @media screen and (max-width: 980px) {
+          padding: 00px 20px 20px 20px;
+        }
       `}
     >
       <AtomWrapper

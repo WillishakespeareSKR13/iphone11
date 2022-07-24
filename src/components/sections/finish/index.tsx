@@ -34,7 +34,7 @@ const SectionFinish = () => {
             line-height: 1.333;
             font-weight: 600;
             text-align: center;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 980px) {
               font-size: 48px;
             }
           `}
@@ -47,7 +47,7 @@ const SectionFinish = () => {
             overflow: hidden;
             width: max-content;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 980px) {
               width: 250px;
               height: 250px;
               img {
@@ -72,7 +72,7 @@ const SectionFinish = () => {
                 font-size: 22px;
                 font-weight: bold;
                 text-decoration: underline;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   font-size: 16px;
                 }
               `}
@@ -87,7 +87,7 @@ const SectionFinish = () => {
                 font-size: 22px;
                 font-weight: bold;
                 text-decoration: underline;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   font-size: 16px;
                 }
               `}
@@ -102,7 +102,7 @@ const SectionFinish = () => {
                 font-size: 22px;
                 font-weight: bold;
                 text-decoration: underline;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 980px) {
                   font-size: 16px;
                 }
               `}

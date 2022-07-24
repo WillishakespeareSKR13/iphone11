@@ -11,7 +11,7 @@ export const CSSShadowCover = css`
     transform: translate(0, -100%);
     background: linear-gradient(0deg, #000, transparent 100%, transparent);
     z-index: 100;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 980px) {
       left: -40px;
       width: 100vw;
     }
@@ -26,7 +26,7 @@ export const CSSShadowCover = css`
     transform: translate(0, 100%);
     background: linear-gradient(180deg, #000, transparent 100%, transparent);
     z-index: 100;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 980px) {
       left: -40px;
       width: 100vw;
     }
