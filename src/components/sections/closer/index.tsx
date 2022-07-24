@@ -78,6 +78,9 @@ const SectionCloser = () => {
               height: max-content;
               max-width: 380px;
               gap: 10px;
+              @media screen and (max-width: 980px) {
+                padding: 0px 50px;
+              }
             `}
           >
             <AtomText

@@ -41,7 +41,7 @@ const SectionPro = () => {
             align-items: center;
             gap: 50px;
             @media screen and (max-width: 980px) {
-              padding: 0 30px;
+              padding: 0px 50px;
               gap: 20px;
             }
           `}

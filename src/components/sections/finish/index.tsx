@@ -15,7 +15,7 @@ const SectionFinish = () => {
           height: 100vh;
           background-color: #060606;
           z-index: 8;
-          padding-top: 40px;
+          padding: 0px 40px;
           align-items: center;
           justify-content: center;
           gap: 40px;
