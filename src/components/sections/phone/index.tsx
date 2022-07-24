@@ -1,13 +1,13 @@
-import { css } from "@emotion/react";
-import { useAtomValue, useSetAtom } from "jotai";
-import { useRef } from "react";
-import { CSSShadowCover } from "../../../css/effects";
-import { CSSContainer } from "../../../css/wrapper";
-import useSetRef from "../../../hooks/useSetRef";
-import { RefPhoneAtom } from "../../../jotai/ref";
-import { ScrollAtom } from "../../../jotai/scroll";
-import AtomImage from "../../atoms/AtomImage";
-import AtomWrapper from "../../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { useAtomValue, useSetAtom } from 'jotai';
+import { useRef } from 'react';
+import { CSSShadowCover } from '../../../css/effects';
+import { CSSContainer } from '../../../css/wrapper';
+import useSetRef from '../../../hooks/useSetRef';
+import { RefPhoneAtom } from '../../../jotai/ref';
+import { ScrollAtom } from '../../../jotai/scroll';
+import AtomImage from '../../atoms/AtomImage';
+import AtomWrapper from '../../atoms/AtomWrapper';
 
 const SectionPhone = () => {
   const scroll = useAtomValue(ScrollAtom);

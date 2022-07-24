@@ -1,8 +1,8 @@
-import { css } from "@emotion/react";
-import { useAtomValue } from "jotai";
-import { ScrollAtom } from "../../../../jotai/scroll";
-import AtomImage from "../../../atoms/AtomImage";
-import AtomWrapper from "../../../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { useAtomValue } from 'jotai';
+import { ScrollAtom } from '../../../../jotai/scroll';
+import AtomImage from '../../../atoms/AtomImage';
+import AtomWrapper from '../../../atoms/AtomWrapper';
 
 const SectionImages = () => {
   const scroll = useAtomValue(ScrollAtom);

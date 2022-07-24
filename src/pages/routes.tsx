@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import Home from ".";
+import { Route, Routes } from 'react-router-dom';
+import Home from '.';
 
 const AppRoutes = () => {
   return (

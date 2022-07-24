@@ -1,5 +1,5 @@
-import Styles from "./styles";
-import AppRoutes from "./pages/routes";
+import Styles from './styles';
+import AppRoutes from './pages/routes';
 
 const App = () => {
   return (

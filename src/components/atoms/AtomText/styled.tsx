@@ -1,15 +1,15 @@
-import { css } from "@emotion/react";
-import styled from "@emotion/styled";
-import { motion } from "framer-motion";
-import { AtomTextTypes } from "./types";
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
+import { AtomTextTypes } from './types';
 
 const TextStyle = (props: AtomTextTypes) => {
   const { customCSS } = props;
   return css`
     line-height: 150%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
     text-align: left;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;

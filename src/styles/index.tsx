@@ -1,5 +1,5 @@
-import FontStyled from "./_fonts";
-import NormalizerStyled from "./_normalze";
+import FontStyled from './_fonts';
+import NormalizerStyled from './_normalze';
 
 const Styles = () => {
   return (

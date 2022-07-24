@@ -1,14 +1,14 @@
-import { css } from "@emotion/react";
-import styled from "@emotion/styled";
-import { motion } from "framer-motion";
-import { AtomButtonTypes } from "./types";
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
+import { AtomButtonTypes } from './types';
 
 export const ButtonStyled = styled(motion.button)<AtomButtonTypes>`
   width: max-content;
   height: max-content;
   padding: 8px 30px;
   font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   min-height: 40px;
   border: 1px solid transparent;

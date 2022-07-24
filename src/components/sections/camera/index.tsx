@@ -1,17 +1,17 @@
-import { css } from "@emotion/react";
-import { useAtomValue, useSetAtom } from "jotai";
-import { useRef } from "react";
-import { CSSContainer } from "../../../css/wrapper";
-import useSetRef from "../../../hooks/useSetRef";
-import { RefCameraAtom } from "../../../jotai/ref";
-import { ScrollAtom } from "../../../jotai/scroll";
-import AtomImage from "../../atoms/AtomImage";
-import AtomText from "../../atoms/AtomText";
-import AtomWrapper from "../../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { useAtomValue, useSetAtom } from 'jotai';
+import { useRef } from 'react';
+import { CSSContainer } from '../../../css/wrapper';
+import useSetRef from '../../../hooks/useSetRef';
+import { RefCameraAtom } from '../../../jotai/ref';
+import { ScrollAtom } from '../../../jotai/scroll';
+import AtomImage from '../../atoms/AtomImage';
+import AtomText from '../../atoms/AtomText';
+import AtomWrapper from '../../atoms/AtomWrapper';
 
 const variants = {
   open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: 10 },
+  closed: { opacity: 0, y: 10 }
 };
 
 const SectionCamera = () => {
@@ -65,11 +65,11 @@ const SectionCamera = () => {
           `}
         >
           <AtomText
-            animate={scroll?.closer?.map > 70 ? "open" : "closed"}
+            animate={scroll?.closer?.map > 70 ? 'open' : 'closed'}
             variants={variants}
             transition={{
               duration: 0.2,
-              ease: "easeInOut",
+              ease: 'easeInOut'
             }}
             css={css`
               font-size: 96px;
@@ -86,11 +86,11 @@ const SectionCamera = () => {
             Pro camera system
           </AtomText>
           <AtomText
-            animate={scroll?.closer?.map > 29 ? "open" : "closed"}
+            animate={scroll?.closer?.map > 29 ? 'open' : 'closed'}
             variants={variants}
             transition={{
               duration: 0.2,
-              ease: "easeInOut",
+              ease: 'easeInOut'
             }}
             css={css`
               font-size: 96px;

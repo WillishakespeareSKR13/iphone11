@@ -1,8 +1,8 @@
-import { css } from "@emotion/react";
+import { css } from '@emotion/react';
 
 export const CSSShadowCover = css`
   ::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -40px;
     left: 0;
@@ -16,7 +16,7 @@ export const CSSShadowCover = css`
     }
   }
   ::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -40px;
     left: 0;

@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/no-children-prop */
-import { FC, forwardRef } from "react";
-import AtomWrapper from "../AtomWrapper";
-import { AtomImageStyled } from "./styled";
-import { AtomImageTypes } from "./types";
+import { FC, forwardRef } from 'react';
+import AtomWrapper from '../AtomWrapper';
+import { AtomImageStyled } from './styled';
+import { AtomImageTypes } from './types';
 
 const AtomImage: FC<AtomImageTypes> = forwardRef<any, AtomImageTypes>(
   (props, ref) => {
@@ -16,7 +16,7 @@ const AtomImage: FC<AtomImageTypes> = forwardRef<any, AtomImageTypes>(
           children={null}
           src={
             src ??
-            "https://storage.googleapis.com/cdn-bucket-ixulabs-platform/IXU-0002/icons/placeholder-image.png"
+            'https://storage.googleapis.com/cdn-bucket-ixulabs-platform/IXU-0002/icons/placeholder-image.png'
           }
           alt={alt}
         />

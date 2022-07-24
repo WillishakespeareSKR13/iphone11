@@ -1,7 +1,7 @@
-import { css } from "@emotion/react";
-import styled from "@emotion/styled";
-import { motion } from "framer-motion";
-import { AtomWrapperTypes } from "./types";
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
+import { AtomWrapperTypes } from './types';
 
 const AtomWrapperStyled = (props: AtomWrapperTypes) => {
   const { customCSS } = props;

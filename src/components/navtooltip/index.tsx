@@ -1,6 +1,6 @@
-import { css } from "@emotion/react";
-import { CSSContainer, CSSContent } from "../../css/wrapper";
-import AtomWrapper from "../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { CSSContainer, CSSContent } from '../../css/wrapper';
+import AtomWrapper from '../atoms/AtomWrapper';
 
 const Nav = () => {
   return (
@@ -28,9 +28,9 @@ const Nav = () => {
           background-color: #111111;
           padding: 0px 12px;
           justify-content: space-between;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-            "Helvetica Neue", sans-serif;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+            'Helvetica Neue', sans-serif;
           a {
             display: flex;
             align-items: center;

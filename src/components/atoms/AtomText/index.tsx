@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { FC, forwardRef } from "react";
+import { FC, forwardRef } from 'react';
 import {
   TextStyledDefault,
   TextStyledA,
@@ -9,58 +9,58 @@ import {
   TextStyledH4,
   TextStyledH5,
   TextStyledH6,
-  TextStyledP,
-} from "./styled";
-import { AtomTextTypes } from "./types";
+  TextStyledP
+} from './styled';
+import { AtomTextTypes } from './types';
 
 const AtomText: FC<AtomTextTypes> = forwardRef<any, AtomTextTypes>(
   (props, ref) => {
     const { children, as } = props;
 
     switch (as) {
-      case "a":
+      case 'a':
         return (
           <TextStyledA ref={ref} {...props}>
             {children}
           </TextStyledA>
         );
-      case "p":
+      case 'p':
         return (
           <TextStyledP ref={ref} {...props}>
             {children}
           </TextStyledP>
         );
-      case "h1":
+      case 'h1':
         return (
           <TextStyledH1 ref={ref} {...props}>
             {children}
           </TextStyledH1>
         );
-      case "h2":
+      case 'h2':
         return (
           <TextStyledH2 ref={ref} {...props}>
             {children}
           </TextStyledH2>
         );
-      case "h3":
+      case 'h3':
         return (
           <TextStyledH3 ref={ref} {...props}>
             {children}
           </TextStyledH3>
         );
-      case "h4":
+      case 'h4':
         return (
           <TextStyledH4 ref={ref} {...props}>
             {children}
           </TextStyledH4>
         );
-      case "h5":
+      case 'h5':
         return (
           <TextStyledH5 ref={ref} {...props}>
             {children}
           </TextStyledH5>
         );
-      case "h6":
+      case 'h6':
         return (
           <TextStyledH6 ref={ref} {...props}>
             {children}

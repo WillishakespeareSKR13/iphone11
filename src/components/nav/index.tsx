@@ -1,6 +1,6 @@
-import { css } from "@emotion/react";
-import { CSSContainer, CSSContent } from "../../css/wrapper";
-import AtomWrapper from "../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { CSSContainer, CSSContent } from '../../css/wrapper';
+import AtomWrapper from '../atoms/AtomWrapper';
 
 const Nav = () => {
   return (
@@ -40,9 +40,9 @@ const DesktopNav = () => (
         color: #ffffff;
         font-weight: 500;
         font-size: 14px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
       }
       img {
         height: 20px;
@@ -99,9 +99,9 @@ const MovileNav = () => (
         color: #ffffff;
         font-weight: 500;
         font-size: 14px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
       }
       img {
         height: 20px;

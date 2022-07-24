@@ -1,11 +1,11 @@
-import { css } from "@emotion/react";
-import { useAtomValue } from "jotai";
-import { ScrollAtom } from "../../../../jotai/scroll";
-import AtomText from "../../../atoms/AtomText";
-import AtomWrapper from "../../../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { useAtomValue } from 'jotai';
+import { ScrollAtom } from '../../../../jotai/scroll';
+import AtomText from '../../../atoms/AtomText';
+import AtomWrapper from '../../../atoms/AtomWrapper';
 const variants = {
   open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: 10 },
+  closed: { opacity: 0, y: 10 }
 };
 const SectionPro = () => {
   const scroll = useAtomValue(ScrollAtom);
@@ -37,12 +37,12 @@ const SectionPro = () => {
           `}
         >
           <AtomText
-            animate={scroll?.phone?.map > 80 ? "open" : "closed"}
+            animate={scroll?.phone?.map > 80 ? 'open' : 'closed'}
             variants={variants}
             transition={{
               duration: 0.2,
               delay: 0.2,
-              ease: "easeInOut",
+              ease: 'easeInOut'
             }}
             css={css`
               text-align: center;
@@ -62,11 +62,11 @@ const SectionPro = () => {
             And then there was Pro.
           </AtomText>
           <AtomText
-            animate={scroll?.phone?.map > 50 ? "open" : "closed"}
+            animate={scroll?.phone?.map > 50 ? 'open' : 'closed'}
             variants={variants}
             transition={{
               duration: 0.2,
-              ease: "easeInOut",
+              ease: 'easeInOut'
             }}
             css={css`
               text-align: center;
@@ -100,11 +100,11 @@ const SectionPro = () => {
             `}
           >
             <AtomText
-              animate={scroll?.phone?.map > 30 ? "open" : "closed"}
+              animate={scroll?.phone?.map > 30 ? 'open' : 'closed'}
               variants={variants}
               transition={{
                 duration: 0.2,
-                ease: "easeInOut",
+                ease: 'easeInOut'
               }}
               css={css`
                 text-align: center;
@@ -132,11 +132,11 @@ const SectionPro = () => {
               From $24.95/mo. or <br /> $599 with trade-in.*
             </AtomText>
             <AtomWrapper
-              animate={scroll?.phone?.map > 20 ? "open" : "closed"}
+              animate={scroll?.phone?.map > 20 ? 'open' : 'closed'}
               variants={variants}
               transition={{
                 duration: 0.2,
-                ease: "easeInOut",
+                ease: 'easeInOut'
               }}
               css={css`
                 flex-direction: row;

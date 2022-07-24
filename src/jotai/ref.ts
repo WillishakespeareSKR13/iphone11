@@ -1,5 +1,5 @@
-import { atom } from "jotai";
-import { MutableRefObject } from "react";
+import { atom } from 'jotai';
+import { MutableRefObject } from 'react';
 
 export type RefDiv = MutableRefObject<HTMLDivElement | undefined>;
 export const RefPhoneAtom = atom(null as unknown as RefDiv);

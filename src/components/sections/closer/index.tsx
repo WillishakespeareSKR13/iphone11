@@ -1,17 +1,17 @@
-import { css } from "@emotion/react";
-import { useAtomValue, useSetAtom } from "jotai";
-import { useRef } from "react";
-import { CSSContainer } from "../../../css/wrapper";
-import useSetRef from "../../../hooks/useSetRef";
-import { RefCloserAtom } from "../../../jotai/ref";
-import { ScrollAtom } from "../../../jotai/scroll";
-import AtomImage from "../../atoms/AtomImage";
-import AtomText from "../../atoms/AtomText";
-import AtomWrapper from "../../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { useAtomValue, useSetAtom } from 'jotai';
+import { useRef } from 'react';
+import { CSSContainer } from '../../../css/wrapper';
+import useSetRef from '../../../hooks/useSetRef';
+import { RefCloserAtom } from '../../../jotai/ref';
+import { ScrollAtom } from '../../../jotai/scroll';
+import AtomImage from '../../atoms/AtomImage';
+import AtomText from '../../atoms/AtomText';
+import AtomWrapper from '../../atoms/AtomWrapper';
 
 const variants = {
   open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: 10 },
+  closed: { opacity: 0, y: 10 }
 };
 
 const SectionCloser = () => {
@@ -23,7 +23,7 @@ const SectionCloser = () => {
     <AtomWrapper
       ref={ref}
       css={css`
-        position: ${scroll?.proImage?.isMax ? "static" : "fixed"};
+        position: ${scroll?.proImage?.isMax ? 'static' : 'fixed'};
         ${CSSContainer}
         height: 100vh;
         padding: 0px 40px 40px 40px;
@@ -71,11 +71,11 @@ const SectionCloser = () => {
             `}
           >
             <AtomText
-              animate={scroll?.proImage.map > 80 ? "open" : "closed"}
+              animate={scroll?.proImage.map > 80 ? 'open' : 'closed'}
               variants={variants}
               transition={{
                 duration: 0.2,
-                ease: "easeInOut",
+                ease: 'easeInOut'
               }}
               css={css`
                 font-size: 72px;
@@ -91,11 +91,11 @@ const SectionCloser = () => {
               Take a closer look.
             </AtomText>
             <AtomText
-              animate={scroll?.proImage.map > 70 ? "open" : "closed"}
+              animate={scroll?.proImage.map > 70 ? 'open' : 'closed'}
               variants={variants}
               transition={{
                 duration: 0.2,
-                ease: "easeInOut",
+                ease: 'easeInOut'
               }}
               css={css`
                 font-size: 24px;
@@ -126,7 +126,7 @@ const SectionCloser = () => {
               object-position: center center;
               transform: translate(
                 -20%,
-                ${-(scroll.proImage.mapHalf - 40) + 40}${"%"}
+                ${-(scroll.proImage.mapHalf - 40) + 40}${'%'}
               );
               transition: transform 2s ease-out;
               backface-visibility: hidden;

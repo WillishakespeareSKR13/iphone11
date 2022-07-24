@@ -1,5 +1,5 @@
-import { RefDiv } from "../jotai/ref";
-import { map } from "./map";
+import { RefDiv } from '../jotai/ref';
+import { map } from './map';
 
 export const getPositionChilds = (child: RefDiv) => {
   const getHeight = child?.current?.clientHeight ?? 0;
@@ -18,6 +18,6 @@ export const getPositionChilds = (child: RefDiv) => {
     mapHalfQuarter: map(applyRules, 0, getHeight, 0, 15),
     middleUp: Math.min(getMap, 50),
     middleDown: Math.max(getMap, 50),
-    middle: Math.abs(getMap - 50),
+    middle: Math.abs(getMap - 50)
   };
 };

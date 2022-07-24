@@ -1,5 +1,5 @@
-import { css, Global } from "@emotion/react";
-import { FC } from "react";
+import { css, Global } from '@emotion/react';
+import { FC } from 'react';
 
 const NormalizerStyled: FC = () => {
   return (
@@ -92,9 +92,9 @@ const NormalizerStyled: FC = () => {
           margin: 0;
         }
 
-        [type="button"],
-        [type="reset"],
-        [type="submit"],
+        [type='button'],
+        [type='reset'],
+        [type='submit'],
         button {
           -webkit-appearance: button;
           -webkit-tap-highlight-color: transparent;

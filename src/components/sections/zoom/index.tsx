@@ -1,19 +1,14 @@
-import { css } from "@emotion/react";
-import { useAtomValue, useSetAtom } from "jotai";
-import { useRef } from "react";
-import { TextZoom } from "../../../css/text";
-import { CSSContainer } from "../../../css/wrapper";
-import useSetRef from "../../../hooks/useSetRef";
-import { RefZoomAtom } from "../../../jotai/ref";
-import { ScrollAtom } from "../../../jotai/scroll";
-import AtomImage from "../../atoms/AtomImage";
-import AtomText from "../../atoms/AtomText";
-import AtomWrapper from "../../atoms/AtomWrapper";
-
-const variants = {
-  open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: 10 },
-};
+import { css } from '@emotion/react';
+import { useAtomValue, useSetAtom } from 'jotai';
+import { useRef } from 'react';
+import { TextZoom } from '../../../css/text';
+import { CSSContainer } from '../../../css/wrapper';
+import useSetRef from '../../../hooks/useSetRef';
+import { RefZoomAtom } from '../../../jotai/ref';
+import { ScrollAtom } from '../../../jotai/scroll';
+import AtomImage from '../../atoms/AtomImage';
+import AtomText from '../../atoms/AtomText';
+import AtomWrapper from '../../atoms/AtomWrapper';
 
 const SectionZoom = () => {
   const scroll = useAtomValue(ScrollAtom);
@@ -40,7 +35,7 @@ const SectionZoom = () => {
           css={css`
             top: 0px;
             left: 0px;
-            position: ${scroll.shoot.isMax ? "fixed" : "absolute"};
+            position: ${scroll.shoot.isMax ? 'fixed' : 'absolute'};
             ${CSSContainer}
             width: 100vw;
             height: 100vh;
@@ -110,7 +105,7 @@ const SectionZoom = () => {
                     width: 100%;
                     height: 100%;
                     img {
-                      opacity: ${scroll.zoom.map > 60 ? 1 : "0.1"};
+                      opacity: ${scroll.zoom.map > 60 ? 1 : '0.1'};
                       width: 100%;
                       height: 100%;
                       transition: all 0.5s ease-in-out;
@@ -125,7 +120,7 @@ const SectionZoom = () => {
                     width: 50%;
                     overflow: hidden;
                     img {
-                      opacity: ${scroll.zoom.map > 30 ? 1 : "0.1"};
+                      opacity: ${scroll.zoom.map > 30 ? 1 : '0.1'};
                       width: 100vw;
                       max-width: 980px;
                       height: 100%;

@@ -1,8 +1,8 @@
-import { css } from "@emotion/react";
-import { CSSContainer } from "../../../css/wrapper";
-import AtomImage from "../../atoms/AtomImage";
-import AtomText from "../../atoms/AtomText";
-import AtomWrapper from "../../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { CSSContainer } from '../../../css/wrapper';
+import AtomImage from '../../atoms/AtomImage';
+import AtomText from '../../atoms/AtomText';
+import AtomWrapper from '../../atoms/AtomWrapper';
 
 const SectionFinish = () => {
   return (

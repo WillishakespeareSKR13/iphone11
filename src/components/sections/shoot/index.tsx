@@ -1,18 +1,18 @@
-import { css } from "@emotion/react";
-import { useAtomValue, useSetAtom } from "jotai";
-import { useRef } from "react";
-import { TextShoot } from "../../../css/text";
-import { CSSContainer } from "../../../css/wrapper";
-import useSetRef from "../../../hooks/useSetRef";
-import { RefShootAtom } from "../../../jotai/ref";
-import { ScrollAtom } from "../../../jotai/scroll";
-import AtomImage from "../../atoms/AtomImage";
-import AtomText from "../../atoms/AtomText";
-import AtomWrapper from "../../atoms/AtomWrapper";
+import { css } from '@emotion/react';
+import { useAtomValue, useSetAtom } from 'jotai';
+import { useRef } from 'react';
+import { TextShoot } from '../../../css/text';
+import { CSSContainer } from '../../../css/wrapper';
+import useSetRef from '../../../hooks/useSetRef';
+import { RefShootAtom } from '../../../jotai/ref';
+import { ScrollAtom } from '../../../jotai/scroll';
+import AtomImage from '../../atoms/AtomImage';
+import AtomText from '../../atoms/AtomText';
+import AtomWrapper from '../../atoms/AtomWrapper';
 
 const variants = {
   open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: 10 },
+  closed: { opacity: 0, y: 10 }
 };
 
 const SectionShoot = () => {
@@ -39,7 +39,7 @@ const SectionShoot = () => {
           css={css`
             top: 0px;
             left: 0px;
-            position: ${scroll.camera.isMax ? "fixed" : "absolute"};
+            position: ${scroll.camera.isMax ? 'fixed' : 'absolute'};
             ${CSSContainer}
             width: 100vw;
             height: 100vh;
@@ -81,13 +81,13 @@ const SectionShoot = () => {
               <AtomText
                 animate={
                   scroll?.camera?.map > 80 && scroll?.shoot?.map < 25
-                    ? "open"
-                    : "closed"
+                    ? 'open'
+                    : 'closed'
                 }
                 variants={variants}
                 transition={{
                   duration: 0.2,
-                  ease: "easeInOut",
+                  ease: 'easeInOut'
                 }}
                 css={css`
                   font-size: 32px;
@@ -110,13 +110,13 @@ const SectionShoot = () => {
               <AtomWrapper
                 animate={
                   scroll.shoot.map >= 25 && scroll.shoot.map < 50
-                    ? "open"
-                    : "closed"
+                    ? 'open'
+                    : 'closed'
                 }
                 variants={variants}
                 transition={{
                   duration: 0.2,
-                  ease: "easeInOut",
+                  ease: 'easeInOut'
                 }}
                 css={css`
                   left: 0px;
@@ -169,13 +169,13 @@ const SectionShoot = () => {
               <AtomWrapper
                 animate={
                   scroll.shoot.map >= 50 && scroll.shoot.map < 75
-                    ? "open"
-                    : "closed"
+                    ? 'open'
+                    : 'closed'
                 }
                 variants={variants}
                 transition={{
                   duration: 0.2,
-                  ease: "easeInOut",
+                  ease: 'easeInOut'
                 }}
                 css={css`
                   top: 38%;
@@ -222,11 +222,11 @@ const SectionShoot = () => {
               </AtomWrapper>
 
               <AtomWrapper
-                animate={scroll.shoot.map >= 75 ? "open" : "closed"}
+                animate={scroll.shoot.map >= 75 ? 'open' : 'closed'}
                 variants={variants}
                 transition={{
                   duration: 0.2,
-                  ease: "easeInOut",
+                  ease: 'easeInOut'
                 }}
                 css={css`
                   top: 49%;
@@ -291,7 +291,7 @@ const SectionShoot = () => {
                   z-index: -2;
 
                   img {
-                    opacity: ${scroll.shoot.map >= 25 ? "0.5" : "1"};
+                    opacity: ${scroll.shoot.map >= 25 ? '0.5' : '1'};
                     width: 1400px;
                     height: 2800px;
                     background-color: #000000;
@@ -316,8 +316,8 @@ const SectionShoot = () => {
 
                   img {
                     opacity: ${scroll.shoot.map >= 25 && scroll.shoot.map < 50
-                      ? "1"
-                      : "0"};
+                      ? '1'
+                      : '0'};
                     width: 560px;
                     height: 565px;
                     background-color: #00000000;
@@ -341,8 +341,8 @@ const SectionShoot = () => {
 
                   img {
                     opacity: ${scroll.shoot.map >= 50 && scroll.shoot.map < 75
-                      ? "1"
-                      : "0"};
+                      ? '1'
+                      : '0'};
                     width: 560px;
                     height: 565px;
                     background-color: #00000000;
@@ -365,7 +365,7 @@ const SectionShoot = () => {
                   z-index: 2;
 
                   img {
-                    opacity: ${scroll.shoot.map >= 75 ? "1" : "0"};
+                    opacity: ${scroll.shoot.map >= 75 ? '1' : '0'};
                     width: 560px;
                     height: 565px;
                     background-color: #00000000;

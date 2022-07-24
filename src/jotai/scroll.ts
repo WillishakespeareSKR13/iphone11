@@ -1,13 +1,13 @@
-import { atom } from "jotai";
-import { getPositionChilds } from "../utils/getPositionChilds";
+import { atom } from 'jotai';
+import { getPositionChilds } from '../utils/getPositionChilds';
 import {
   RefCameraAtom,
   RefCloserAtom,
   RefPhoneAtom,
   RefProImageAtom,
   RefShootAtom,
-  RefZoomAtom,
-} from "./ref";
+  RefZoomAtom
+} from './ref';
 
 export const ScrollPosition = atom(0);
 
@@ -18,5 +18,5 @@ export const ScrollAtom = atom((get) => ({
   closer: getPositionChilds(get(RefCloserAtom)),
   camera: getPositionChilds(get(RefCameraAtom)),
   shoot: getPositionChilds(get(RefShootAtom)),
-  zoom: getPositionChilds(get(RefZoomAtom)),
+  zoom: getPositionChilds(get(RefZoomAtom))
 }));
