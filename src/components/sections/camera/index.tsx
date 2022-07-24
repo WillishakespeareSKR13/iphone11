@@ -45,6 +45,9 @@ const SectionCamera = () => {
           gap: 40px;
           background-color: #000000;
           z-index: 7;
+          @media screen and (max-width: 980px) {
+            padding: 20px 20px 20px 20px;
+          }
         `}
       >
         <AtomWrapper

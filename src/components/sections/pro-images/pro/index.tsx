@@ -124,6 +124,9 @@ const SectionPro = () => {
                     display: flex;
                   }
                 }
+                @media screen and (max-width: 425px) {
+                  font-size: 21px;
+                }
               `}
             >
               From $24.95/mo. or <br /> $599 with trade-in.*
