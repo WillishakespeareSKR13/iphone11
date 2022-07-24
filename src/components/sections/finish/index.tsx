@@ -1,16 +1,33 @@
 import { css } from '@emotion/react';
+import { useAtomValue } from 'jotai';
 import { CSSContainer } from '../../../css/wrapper';
+import { ScrollAtom } from '../../../jotai/scroll';
 import AtomImage from '../../atoms/AtomImage';
 import AtomText from '../../atoms/AtomText';
 import AtomWrapper from '../../atoms/AtomWrapper';
 
 const SectionFinish = () => {
+  const scroll = useAtomValue(ScrollAtom);
+
   return (
     <>
       <AtomWrapper
         as="section"
         css={css`
           ${CSSContainer}
+          width: 100vw;
+          height: 400vh;
+          background-color: #00000000;
+          z-index: 10;
+        `}
+      />
+      <AtomWrapper
+        as="section"
+        css={css`
+          ${CSSContainer}
+          position: fixed;
+          top: calc(400vh - ${scroll.zoom.distance}px);
+          transition: top 0.9s ease-in-out;
           width: 100vw;
           height: 100vh;
           background-color: #060606;

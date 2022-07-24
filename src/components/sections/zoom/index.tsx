@@ -22,8 +22,19 @@ const SectionZoom = () => {
         as="section"
         css={css`
           ${CSSContainer}
-          position: relative;
-          top: 0;
+          width: 100vw;
+          height: 400vh;
+          background-color: #00000000;
+          z-index: 10;
+        `}
+      />
+      <AtomWrapper
+        as="section"
+        css={css`
+          ${CSSContainer}
+          position: fixed;
+          top: calc(400vh - ${scroll.shoot.distance}px);
+          transition: top 0.9s ease-in-out;
           width: 100vw;
           height: 400vh;
           min-height: 400vh;
@@ -35,7 +46,6 @@ const SectionZoom = () => {
           css={css`
             top: 0px;
             left: 0px;
-            position: ${scroll.shoot.isMax ? 'fixed' : 'absolute'};
             ${CSSContainer}
             width: 100vw;
             height: 100vh;

@@ -15,74 +15,88 @@ const SectionPhone = () => {
   const setRefPhone = useSetAtom(RefPhoneAtom);
   useSetRef(ref, setRefPhone);
   return (
-    <AtomWrapper
-      ref={ref}
-      as="section"
-      css={css`
-        ${CSSContainer}
-        position: relative;
-        height: 100vh;
-        z-index: 10;
-        ::after {
-          top: 0;
-          content: '';
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          border: 40px solid #111111;
-          @media screen and (max-width: 980px) {
-            border: 20px solid #111111;
-          }
-        }
-      `}
-    >
+    <>
       <AtomWrapper
+        ref={ref}
+        as="section"
         css={css`
-          width: 100%;
-          position: relative;
-          justify-content: center;
-          align-items: center;
-          background-color: #000000;
-          height: 100%;
-          min-height: 100%;
-
-          ${CSSShadowCover}
+          ${CSSContainer}
+          width: 100vw;
+          height: 100vh;
+          background-color: #00000000;
+          z-index: 10;
+        `}
+      />
+      <AtomWrapper
+        as="section"
+        css={css`
+          ${CSSContainer}
+          position: fixed;
+          top: -${scroll.phone.distance}px;
+          transition: top 0.9s ease-in-out;
+          height: 100vh;
+          z-index: 10;
+          ::after {
+            top: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 40px solid #111111;
+            @media screen and (max-width: 980px) {
+              border: 20px solid #111111;
+            }
+          }
         `}
       >
         <AtomWrapper
           css={css`
-            position: relative;
-            justify-content: flex-end;
-            align-items: center;
             width: 100%;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
             height: 100%;
-            overflow: hidden;
+            min-height: 100%;
+
+            ${CSSShadowCover}
           `}
         >
-          <AtomImage
+          <AtomWrapper
             css={css`
               position: relative;
-              width: 60%;
-              height: 70%;
-              overflow: visible;
-              img {
-                position: absolute;
-                width: 100%;
-                height: max-content;
-                background-color: #000000;
-                object-fit: cover;
-                object-position: top;
-                backface-visibility: hidden;
-              }
-              transform: translate(0%, ${-scroll.phone.mapQuarter}%);
-              transition: transform 2s ease-out;
+              justify-content: flex-end;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
             `}
-            src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9da988bce4552fdc33d69c_iphone%20endframe.png"
-            alt=""
-          />
+          >
+            <AtomImage
+              css={css`
+                position: relative;
+                width: 60%;
+                height: 70%;
+                overflow: visible;
+                img {
+                  position: absolute;
+                  width: 100%;
+                  height: max-content;
+                  background-color: #000000;
+                  object-fit: cover;
+                  object-position: top;
+                  backface-visibility: hidden;
+                }
+                transform: translate(0%, ${-scroll.phone.mapQuarter}%);
+                transition: transform 2s ease-out;
+              `}
+              src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9da988bce4552fdc33d69c_iphone%20endframe.png"
+              alt=""
+            />
+          </AtomWrapper>
         </AtomWrapper>
       </AtomWrapper>
-    </AtomWrapper>
+    </>
   );
 };
 

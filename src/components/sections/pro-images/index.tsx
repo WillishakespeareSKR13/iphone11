@@ -15,21 +15,34 @@ const SectionProImages = () => {
   const setRefProImage = useSetAtom(RefProImageAtom);
   useSetRef(ref, setRefProImage);
   return (
-    <AtomWrapper
-      ref={ref}
-      as="section"
-      css={css`
-        ${CSSContainer}
-        position: ${scroll?.phone?.isMax ? 'relative' : 'fixed'};
-        height: 200vh;
-        top: 0;
-        z-index: 9;
-        background-color: #111111;
-      `}
-    >
-      <SectionPro />
-      <SectionImages />
-    </AtomWrapper>
+    <>
+      <AtomWrapper
+        ref={ref}
+        as="section"
+        css={css`
+          ${CSSContainer}
+          width: 100vw;
+          height: 200vh;
+          background-color: #00000000;
+          z-index: 10;
+        `}
+      />
+      <AtomWrapper
+        as="section"
+        css={css`
+          ${CSSContainer}
+          position: fixed;
+          height: 200vh;
+          z-index: 9;
+          background-color: #111111;
+          top: -${scroll.proImage.distance}px;
+          transition: top 0.9s ease-in-out;
+        `}
+      >
+        <SectionPro />
+        <SectionImages />
+      </AtomWrapper>
+    </>
   );
 };
 

@@ -27,8 +27,19 @@ const SectionShoot = () => {
         as="section"
         css={css`
           ${CSSContainer}
-          position: relative;
-          margin-top: 40px;
+          width: 100vw;
+          height: 400vh;
+          background-color: #00000000;
+          z-index: 10;
+        `}
+      />
+      <AtomWrapper
+        as="section"
+        css={css`
+          ${CSSContainer}
+          position: fixed;
+          top: calc(100vh - ${scroll.camera.distance}px);
+          transition: top 0.9s ease-in-out;
           width: 100vw;
           height: 400vh;
           background-color: #00000000;
@@ -39,7 +50,6 @@ const SectionShoot = () => {
           css={css`
             top: 0px;
             left: 0px;
-            position: ${scroll.camera.isMax ? 'fixed' : 'absolute'};
             ${CSSContainer}
             width: 100vw;
             height: 100vh;
