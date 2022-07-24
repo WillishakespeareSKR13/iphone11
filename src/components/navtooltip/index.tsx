@@ -1,14 +1,17 @@
 import { css } from '@emotion/react';
+import { useAtomValue } from 'jotai';
 import { CSSContainer, CSSContent } from '../../css/wrapper';
+import { ScrollAtom } from '../../jotai/scroll';
 import AtomWrapper from '../atoms/AtomWrapper';
 
 const Nav = () => {
+  const scroll = useAtomValue(ScrollAtom);
   return (
     <AtomWrapper
       as="nav"
       css={css`
         ${CSSContainer}
-        position:sticky;
+        position:${scroll.viewport > 0 ? 'fixed' : 'static'};
         top: 0;
         height: 52px;
         justify-content: center;
@@ -16,6 +19,7 @@ const Nav = () => {
         min-height: max-content;
         background-color: #111111;
         z-index: 1000;
+        transition: all 0.3s ease-in-out;
       `}
     >
       <AtomWrapper
