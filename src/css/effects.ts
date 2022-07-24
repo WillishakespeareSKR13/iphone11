@@ -12,8 +12,7 @@ export const CSSShadowCover = css`
     background: linear-gradient(0deg, #000, transparent 100%, transparent);
     z-index: 100;
     @media screen and (max-width: 980px) {
-      left: -40px;
-      width: 100vw;
+      top: -20px;
     }
   }
   ::after {
@@ -27,8 +26,7 @@ export const CSSShadowCover = css`
     background: linear-gradient(180deg, #000, transparent 100%, transparent);
     z-index: 100;
     @media screen and (max-width: 980px) {
-      left: -40px;
-      width: 100vw;
+      bottom: -20px;
     }
   }
 `;
