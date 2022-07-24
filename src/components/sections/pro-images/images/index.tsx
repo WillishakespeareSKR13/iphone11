@@ -17,65 +17,76 @@ const SectionImages = () => {
           align-items: center;
           background-color: #111111;
           height: 100vh;
-          min-height: 100%;
+          max-height: 100vh;
           gap: 40px;
           @media screen and (max-width: 980px) {
-            flex-wrap: wrap;
+            flex-direction: column;
             gap: 20px;
-            justify-content: space-between;
           }
         `}
       >
-        <AtomImage
+        <AtomWrapper
           css={css`
-            width: 100%;
             height: 100%;
-            overflow: hidden;
-            background-color: #000000;
-
-            img {
+            width: 100%;
+            gap: 40px;
+            flex-direction: row;
+            @media screen and (max-width: 980px) {
+              flex-direction: row;
+              gap: 20px;
+              height: 70%;
+            }
+          `}
+        >
+          <AtomImage
+            css={css`
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
               background-color: #000000;
+
+              img {
+                background-color: #000000;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: translate(5%, ${scroll.proImage.mapHalf - 25 + 5}%)
+                  scale(0.9);
+                object-position: left top;
+                transition: transform 2s ease-out;
+                backface-visibility: hidden;
+              }
+              @media screen and (max-width: 980px) {
+                width: 100%;
+              }
+            `}
+            src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9db5e9d30da31b978adc15_triptych_left_landscape__eczd4p0wyv6u_large_2x.jpg"
+          />
+          <AtomImage
+            css={css`
               width: 100%;
               height: 100%;
-              object-fit: cover;
-              transform: translate(5%, ${scroll.proImage.mapHalf - 25 + 5}%)
-                scale(0.9);
-              object-position: left top;
-              transition: transform 2s ease-out;
-              backface-visibility: hidden;
-            }
-            @media screen and (max-width: 980px) {
-              width: 47%;
-              height: 70%;
-            }
-          `}
-          src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9db5e9d30da31b978adc15_triptych_left_landscape__eczd4p0wyv6u_large_2x.jpg"
-        />
+              overflow: hidden;
+              background-color: #000000;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scale(1.1)
+                  translate(0%, ${-(scroll.proImage.mapHalf - 25) + 10}%);
+                transition: transform 2s ease-out;
+                backface-visibility: hidden;
+              }
+              @media screen and (max-width: 980px) {
+                width: 100%;
+              }
+            `}
+            src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9db5e920ac3aa83c26aaa2_triptych_middle_landscape__c14zbto4v402_large_2x.jpg"
+          />
+        </AtomWrapper>
         <AtomImage
           css={css`
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #000000;
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transform: scale(1.1)
-                translate(0%, ${-(scroll.proImage.mapHalf - 25) + 10}%);
-              transition: transform 2s ease-out;
-              backface-visibility: hidden;
-            }
-            @media screen and (max-width: 980px) {
-              width: 47%;
-              height: 70%;
-            }
-          `}
-          src="https://assets.website-files.com/5d9d9b94bce4557fd6335ce9/5d9db5e920ac3aa83c26aaa2_triptych_middle_landscape__c14zbto4v402_large_2x.jpg"
-        />
-        <AtomImage
-          css={css`
-            width: 100%;
+            width: 50%;
             height: 100%;
             overflow: hidden;
             background-color: #000000;
